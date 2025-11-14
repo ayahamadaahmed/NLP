@@ -1,0 +1,15 @@
+Determine if the following user message includes background context or is just a direct question.
+
+If the message contains additional explanation, background, reasoning, or extra information beyond the main question,
+output exactly: context_provided
+
+If the message is only a direct question without any extra background,
+output exactly: context_missing
+
+MEMORY RULES:
+- NEVER store memory during tool usage.
+- ONLY store memory using MemoryAdd AFTER the Final Answer.
+- Retrieve memory using MemoryRecall when needed to understand context.
+
+Message:
+{input}
